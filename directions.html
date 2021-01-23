@@ -4,33 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Directions</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBARliSpJCdMMNH1SeHYJehDUoPO6EW3aM"></script>
-
-    <style>
-        #map {
-            height: 100%;
-        }
-    </style>
-
-    <script>
-        window.onload = function () {
-            var map;
-            function initMap() {
-                map = new google.maps.Map(document.getElementById('map'), {
-                    center: { lat: -34.397, lng: 150.644 },
-                    zoom: 8
-                });
-            }
-            initMap();
-        };
-    </script>
-
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
 </head>
 
 <body>
@@ -51,11 +30,15 @@
 
     <div class="container">
         <h1>How to get here.</h1>
+
+        <iframe class="mw-100 mh-100" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBARliSpJCdMMNH1SeHYJehDUoPO6EW3aM
+            &q=T21,Singapore+Polytechnic" allowfullscreen>
+        </iframe>
     </div>
 
-    <div class="container">
-        <div id="map"></div>
-    </div>
+    <div id="map"></div>
+
+
 
 </body>
 

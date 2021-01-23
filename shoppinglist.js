@@ -30,6 +30,7 @@ $(document).ready(function(){
     if(parseInt(sessionStorage.getItem("count"))>0){
         $('#no-notes').css("visibility","hidden");
         $('#have-notes').css("visibility","visible");
+        $('#notesDisplay').css("visibility","visible");
     }
 
      for (var i = 0; i < sessionStorage.length; i++){

@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap" rel="stylesheet" />
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
 
 
     <!-- <script>
@@ -96,7 +96,7 @@
     <div class="container">
         <h3 id="no-notes">No Notes Found, Add one!</h3>
         <h3 id="have-notes" style="visibility:hidden">You Have Notes!</h3>
-        <table id="notesDisplay" class="table">
+        <table id="notesDisplay" class="table" style="visibility:hidden">
             <thead>
                 <tr>
                     <th>Title</th>
@@ -106,8 +106,8 @@
             <tbody>
             </tbody>
         </table>
-        <p>NOTES DISPLAY LIST:</p>
-        <ul id="notesdisplaylist"></ul>
+        <!-- <p>NOTES DISPLAY LIST:</p>
+        <ul id="notesdisplaylist"></ul> -->
     </div>
 
     <script src="shoppinglist.js"></script>
