@@ -12,7 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap" rel="stylesheet" />
     <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
 
-
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+        }
+    </script>
     <!-- <script>
         function saveMessage() {
             var title = document.getElementById('title');
