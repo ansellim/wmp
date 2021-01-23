@@ -2,8 +2,8 @@
   "theme_color": "#f69435",
   "background_color": "#f69435",
   "display": "standalone",
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/wmp",
+  "start_url": "/wmp",
   "app_name": "Ansel's Minimart",
   "short_name": "Ansel Mart",
   "icons": [
