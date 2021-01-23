@@ -1,0 +1,9 @@
+{
+    "name": "Ansel's Minimart Website",
+    "short_name": "anselminimart",
+    "theme_color": "#72a5cd",
+    "background_color": "#fdfeff",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/"
+}

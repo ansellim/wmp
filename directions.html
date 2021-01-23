@@ -10,6 +10,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBARliSpJCdMMNH1SeHYJehDUoPO6EW3aM"></script>
+
+    <style>
+        #map {
+            height: 100%;
+        }
+    </style>
+
+    <script>
+        window.onload = function () {
+            var map;
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: { lat: -34.397, lng: 150.644 },
+                    zoom: 8
+                });
+            }
+            initMap();
+        };
+    </script>
+
 </head>
 
 <body>
@@ -30,6 +51,10 @@
 
     <div class="container">
         <h1>How to get here.</h1>
+    </div>
+
+    <div class="container">
+        <div id="map"></div>
     </div>
 
 </body>
